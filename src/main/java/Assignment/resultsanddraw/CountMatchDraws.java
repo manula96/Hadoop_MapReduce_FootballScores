@@ -30,7 +30,7 @@ public class CountMatchDraws {
         }
 
     }
-public class CountMatchDrawsReducer
+public static class CountMatchDrawsReducer
         extends Reducer<Text, IntWritable, NullWritable, IntWritable>{
         @Override
         protected void reduce(Text key, Iterable<IntWritable> values,Reducer<Text,IntWritable,NullWritable,IntWritable>.Context context)
