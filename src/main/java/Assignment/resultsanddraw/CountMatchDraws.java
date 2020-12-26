@@ -30,10 +30,14 @@ public class CountMatchDraws {
         }
 
     }
+
+
+
 public static class CountMatchDrawsReducer
         extends Reducer<Text, IntWritable, NullWritable, IntWritable>{
         @Override
-        protected void reduce(Text key, Iterable<IntWritable> values,Reducer<Text,IntWritable,NullWritable,IntWritable>.Context context)
+        protected void reduce(Text key, Iterable<IntWritable> values,
+                              Reducer<Text,IntWritable,NullWritable,IntWritable>.Context context)
             throws IOException, InterruptedException{
             int recordCount = 0;
             for (IntWritable value : values){
