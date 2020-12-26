@@ -84,7 +84,7 @@ public class MatchCountPerCity {
                 System.err.println("Usage: WordCount <in> <out>");
                 System.exit(2);
             }
-            Job job = Job.getInstance(conf, "word count");
+            Job job = Job.getInstance(conf, "Assignment - Per City");
             job.setJarByClass(MatchCountPerCity.class);
             job.setMapperClass(WordCountMapper.class);
             job.setCombinerClass(IntSumReducer.class);
